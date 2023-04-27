@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homework-2</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+</head>
+
+<body>
+
+    <div id="root"></div>
+    <script>
+        let div = React.createElement('div',
+            {
+                style: {
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center"
+                }
+            },
+            [
+                React.createElement('div',
+                    {
+                        style: {
+                            backgroundColor: "white",
+                            width: "400px",
+                            height: "500px",
+                            boxShadow: "0 2px 8px rgba(0,0,0,0.3)"
+                        }
+                    },
+
+                    [
+                        React.createElement('img',
+                            {
+                                src: "https://e0.pxfuel.com/wallpapers/667/489/desktop-wallpaper-cute-cartoon-girl-cute-girl-thumbnail.jpg",
+                                style: {
+                                    borderRadius: "50%",
+                                    width: "100px",
+                                    height: "100px",
+                                    margin: "50px 150px 0px"
+                                }
+                            }, null),
+
+                        React.createElement('div', null,
+                            [
+                                React.createElement('h2', { style: { textAlign: "center", color: "#252727" } }, "Alexandra Caulea"),
+                                React.createElement('p', { style: { textAlign: "center", color: "#969c9c" } }, "I enjoy drinking a cup of coffee every day"),
+                            ]),
+                        React.createElement('div', { style: { display: "flex", justifyContent: "center", gap: "30px", textAlign: "center" } },
+                            [
+                                React.createElement('div', null,
+                                    [
+                                        React.createElement('p', { style: { color: "#6b00b3", fontWeight: "bold", fontSize: "20px" } }, "172"),
+                                        React.createElement('p', { style: { color: "#636969", fontWeight: "bold" } }, "POSTS"),
+                                    ]),
+                                React.createElement('div', null,
+                                    [
+                                        React.createElement('p', { style: { color: "#6b00b3", fontWeight: "bold", fontSize: "20px", } }, "47"),
+                                        React.createElement('p', { style: { color: "#636969", fontWeight: "bold" } }, "FOLLOWERS"),
+                                    ]),
+                                React.createElement('div', null,
+                                    [
+                                        React.createElement('p', { style: { color: "#6b00b3", fontWeight: "bold", fontSize: "20px", } }, "20"),
+                                        React.createElement('p', { style: { color: "#636969", fontWeight: "bold" } }, "FOLLOWING"),
+                                    ])
+                            ]),
+                        React.createElement('div',
+                            {
+                                style: {
+                                    display: "flex",
+                                    justifyContent: "center",
+                                    gap: "20px",
+                                    margin: "20px auto"
+                                }
+                            },
+                            [
+                                React.createElement('button',
+                                    {
+                                        style: {
+                                            backgroundColor: "#6b00b3",
+                                            color: "white",
+                                            width: "130px",
+                                            height: "50px",
+                                            border: "none",
+                                            fontSize: "16px",
+                                            borderRadius: "10px"
+                                        }
+                                    }, "FOLLOW"),
+                                React.createElement('button',
+                                    {
+                                        style: {
+                                            backgroundColor: "#b30086",
+                                            color: "white",
+                                            width: "150px",
+                                            height: "50px",
+                                            border: "none",
+                                            fontSize: "16px",
+                                            borderRadius: "10px"
+                                        }
+                                    }, "MESSAGE")
+                            ])
+                    ])
+            ])
+        ReactDOM.render(div, document.getElementById('root'))
+    </script>
+
+</body>
+
+</html>

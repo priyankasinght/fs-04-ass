@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class Assignment</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body id="root">
+
+</body>
+<script type="text/babel">
+    let div =
+        <div style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "90vh", }}>
+
+            <div style={{ width: "350px", height: "400px", borderRadius: "10px", boxShadow: "0 0 10px black" }}>
+
+                <img style={{ width: "350px", height: "250px", }} src="https://ath2.unileverservices.com/wp-content/uploads/sites/3/2017/09/professional-mens-hairstyles-combed-min-1024x683.jpg" />
+
+
+                <h2 style={{ textAlign: "center", fontWeight: "bold", margin: "10px auto" }}>Dima Blover</h2>
+
+                <p style={{ textAlign: "center", fontSize: "10px", color: "#666666", margin: "10px auto" }}>               UI/UX Designer</p>
+
+                <div style={{ display: "flex", justifyContent: "center", gap: "50px", textAlign: "center", margin: "25px auto" }}>
+                    <div>
+                        <p style={{ fontWeight: "light", fontSize: "20px", margin: "5px auto" }}>26</p>
+                        <p style={{ color: "#666666", fontSize: "10px", margin: "0px auto" }}>Shoot</p>
+                    </div>
+                    <div>
+                        <p style={{ fontWeight: "light", fontSize: "20px", margin: "5px auto" }}>94</p>
+                        <p style={{ color: "#666666", fontSize: "10px", margin: "0px auto" }}>Following</p>
+                    </div>
+                    <div>
+                        <p style={{ fontWeight: "light", fontSize: "20px", margin: "5px auto" }}>139</p>
+                        <p style={{ color: "#666666", fontSize: "10px", margin: "0px auto" }}>Followers</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    ReactDOM.render(div, document.getElementById('root'))
+</script>
+
+</html>

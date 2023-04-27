@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0;
+    background-image: url(https://images.pexels.com/photos/933054/pexels-photo-933054.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 8vh;
+}
+
+.logo {
+    font-family: cursive;
+    height: 100%;
+    width: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo h3 {
+    color: white;
+    font-size: 2rem;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    width: 30vw;
+    align-items: center;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+a:hover{
+    background-color: rgb(238, 181, 225);
+    color: black;
+}
+
+.content {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content h1 {
+    color: black;
+    font-size: 40px;
+}
+
+.credit {
+    display: flex;
+    align-items: center;
+}
+
+.credit span:first-child {
+    color: white;
+}
+
+.credit span:last-child {
+    color: rgb(189, 12, 80);
+}
